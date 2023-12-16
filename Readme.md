@@ -22,3 +22,18 @@ HTML, CSS, JAVA SCRIPT.
  
 ## Output
 
+![Screenshot (347)](https://github.com/Pavithra8805/Memory-game/assets/141915927/289488e2-5b9a-44fc-bea5-1f513d4231dc)
+
+![Screenshot (348)](https://github.com/Pavithra8805/Memory-game/assets/141915927/2df10054-e463-45c6-8601-22bd62bb5250)
+
+![Screenshot (349)](https://github.com/Pavithra8805/Memory-game/assets/141915927/9a6e1588-78c8-4be5-af4e-70bcf69f6fb4)
+
+![Screenshot (350)](https://github.com/Pavithra8805/Memory-game/assets/141915927/ed22f177-35ba-444f-8e85-f921b5bdcfe8)
+
+![Screenshot (351)](https://github.com/Pavithra8805/Memory-game/assets/141915927/4b94fd66-cc68-45c8-8d03-81ae0b360137)
+
+![Screenshot (354)](https://github.com/Pavithra8805/Memory-game/assets/141915927/8153d312-546d-4a19-842f-5dc64b4915ba)
+
+![Screenshot (352)](https://github.com/Pavithra8805/Memory-game/assets/141915927/20e00c45-6332-48a0-80d7-0386547a50a3)
+
+![Screenshot (353)](https://github.com/Pavithra8805/Memory-game/assets/141915927/d1ae752d-7e86-48b8-b541-39e9119d3f3c)
