@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fredoka One', 'cursive';
+            background: url("assests/Screenshot (339).png") no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: #FAB201;
+            font-weight: 900;
+            -webkit-text-stroke: 5px white;
+        }
+
+
+        h2 {
+            color: white;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .game-display {
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container,
+        .game-display,
+        #result {
+            flex-direction: column;
+        }
+
+        .box {
+            height: 90px;
+            width: 90px;
+            margin: 5px;
+            background-color: #ca7dee;
+            border-radius: 10px;
+            box-shadow: 3px 3px white;
+            position: relative;
+        }
+
+        p {
+            text-align: center;
+            line-height: 100px;
+            font-size: xx-large;
+            color: black;
+        }
+
+        h3 {
+            color: white;
+            font-size: 30px;
+        }
+
+        #result {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            visibility: hidden;
+            opacity: 0.9;
+            z-index: 99;
+        }
+
+        #message {
+            font-size: 50px;
+            color: white;
+        }
+
+        
+
+        a {
+            color: white;
+        }
+
+        .hide {
+            display: block;
+        }
+
+        .mark {
+            background: url("assests/question-mark.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 60%;
+            height: 60%;
+            display: flex;
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .face {
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            width: 60%;
+            height: 60%;
+            font-size: xx-large;
+            display: flex;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            z-index: 1;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 8vw;
+                -webkit-text-stroke: 2px white;
+            }
+
+            h2,
+            h3,
+            p,
+            #message {
+                font-size: 4vw;
+            }
+
+            .box {
+                height: 20vw;
+                width: 20vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-display flex">
+        <h1>Emoji's Memory game</h1>
+        <div class="moves">
+            
+            <div id="moves-count" class="movesCount"><h2>Moves: <span>0</span></div>
+            
+            <div id="time" class="Time"><h2>Time: <span id="timer"></span></div>
+        </div>
+        <div class="game-container flex">
+            <div class="container flex">
+                <div id="1" class="box">
+                    <div id="A" class="face flex">
+                        😇
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+
+                <div id="2" class="box">
+                    <div id="B" class="face flex">
+                        🥳
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="3" class="box">
+                    <div id="C" class="face flex">
+                        😜
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="4" class="box">
+                    <div id="D" class="face flex">
+                        😇
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="5" class="box">
+                    <div id="E" class="face flex">
+                        😎
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="6" class="box">
+                    <div id="F" class="face flex">
+                        😴
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="7" class="box">
+                    <div id="G" class="face flex">
+                        🤩
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="8" class="box">
+                    <div id="H" class="face flex">
+                        🥳
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="9" class="box">
+                    <div id="I" class="face flex">
+                        😜
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="10" class="box">
+                    <div id="J" class="face flex">
+                        😂
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="11" class="box">
+                    <div id="K" class="face flex">
+                        🤣
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="12" class="box">
+                    <div id="L" class="face flex">
+                        😴
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+            </div>
+            <div class="container flex">
+                <div id="13" class="box">
+                    <div id="M" class="face flex">
+                        😎
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="14" class="box">
+                    <div id="N" class="face flex">
+                        😂
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="15" class="box">
+                    <div id="O" class="face flex">
+                        🤩
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+                <div id="16" class="box">
+                    <div id="P" class="face flex">
+                        🤣
+                    </div>
+                    <div class="mark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex" id="result">
+        <div id="message"></div>
+        
+    </div>
+    <script src="./script.js"></script>
+    
+
+</body>
+<script src="./sound.js"></script>
+</html>
