@@ -15,7 +15,7 @@ Cards can only be shown two at a time.
 
 ### Timing:
 
-The game may have a time limit 0f 60 seconds. The player have to try to match all pairs before time runs out.
+The game have a time limit 0f 60 seconds. The player have to try to match all pairs before time runs out.
 
 ## Tech Stack:
 HTML, CSS, JAVA SCRIPT.
