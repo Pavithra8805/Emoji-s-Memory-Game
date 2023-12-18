@@ -156,8 +156,3 @@ function countDown() {
 }
 setInterval(countDown, 1000);
 
-// Game over function
-    function gameOver(msg) {
-        
-        message.textContent = msg;
-    }
